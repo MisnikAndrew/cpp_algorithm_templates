@@ -4,7 +4,7 @@
 API
 ALL IN LONG
 
-construction - SegTreeChangeOne t(size, func) (func can be from {"max", "min", "sum", "gcd"})
+construction - SegTreeChangeOne t(size, func) (func can be one of {"max", "min", "sum", "gcd"})
 add(pos, val) - add val to a[pos] (1 - index)
 init(pos, new_val) - set a[pos] = new_val (1 - index)
 Depends on func:
