@@ -27,6 +27,7 @@ struct haha {
         if (c >= '0' && c <= '9') {
             return c - '0' + 53;
         }
+        return 0;
     }
 
     haha(string& s, long long prod, long long module) {
@@ -51,8 +52,7 @@ struct haha {
             hash_powers.push_back(pows);
         } else {
             if (a + 1 > hash_powers[find].size()) {
-                int last_size = powers[find].size();
-                hash_powers[find].resize(a + 1);
+                int last_size = hash_powers[find].size();
                 for (int i = last_size; i <= a; ++i) {
                     hash_powers[find].push_back((hash_powers[find].back() * p) % mod);
                 }
