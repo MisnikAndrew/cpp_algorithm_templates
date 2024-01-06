@@ -19,6 +19,9 @@ fromNode(l) - return vector of values of linked list with head l
  */
 
 ListNode* makeList(vector<int>& m) {
+    if (m.empty()) {
+        return nullptr;
+    }
     int a = m.size();
     ListNode* head = new ListNode(0);
     ListNode* tail = head;
